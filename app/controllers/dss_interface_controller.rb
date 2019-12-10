@@ -1,0 +1,2 @@
+class DSSInterfaceController < ApplicationController
+end

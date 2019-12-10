@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jurusan: one
+  model: 1
+  matkul: one
+  sifat: 1
+
+two:
+  jurusan: two
+  model: 1
+  matkul: two
+  sifat: 1

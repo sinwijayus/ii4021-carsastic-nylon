@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kelas_kuliah: 
+  kode_waktu: MyString
+  ruangan_id: 1
+
+two:
+  kelas_kuliah: 
+  kode_waktu: MyString
+  ruangan_id: 1
