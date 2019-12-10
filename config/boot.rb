@@ -2,16 +2,6 @@ ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __dir__)
 
 require 'bundler/setup' # Set up gems listed in the Gemfile.
 
-
-require 'rails/command'
-require 'rails/commands/server/server_command'
-module Rails; end
-class Rails::Server
-  def default_options
-    super.merge(Host: '0.0.0.0', Port: 4021)
-  end
-end
-
 ->(){
   # Rails ARGV flush mitigation
   pid = Process.pid

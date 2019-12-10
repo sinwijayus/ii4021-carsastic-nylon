@@ -16,6 +16,13 @@ require "rails/test_unit/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+module Rails; end
+class Rails::Server
+  def default_options
+    super.merge(Host: '0.0.0.0', Port: 4021)
+  end
+end
+
 module CarsasticNylon
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
