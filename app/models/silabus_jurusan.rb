@@ -2,7 +2,7 @@ class SilabusJurusan < ApplicationRecord
   belongs_to :jurusan
   belongs_to :mata_kuliah
   validates :model, numericality: { only_integer: true, greater_than: 0 }
-  validates :desc, allow_blank: true, allow_nil: false,
+  validates :desc, presence: true, allow_blank: true, allow_nil: false
   validates :sifat, inclusion: { in: 0..2 }
   def wajib?
     sifat == 1
